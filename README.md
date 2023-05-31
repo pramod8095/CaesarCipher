@@ -1,62 +1,70 @@
-# React: Caesar's Cipher
+# Getting Started with Create React App
 
-Complete a partially completed React application that encrypts and decrypts a piece of text using [Caesar's Cipher](https://en.wikipedia.org/wiki/Caesar_cipher). The cipher uses an encryption algorithm where each letter is replaced with a letter by some fixed number of positions down the alphabetical series (e.g., a shift of _1_ replaces the letter _a_ with _b_, the letter _e_ with _f_, the word _hello_ with _ifmmp_, etc.).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Certain core React functionalities have already been implemented. Complete the React application as shown below in order to pass all the unit tests.
+## Available Scripts
 
-![](https://hrcdn.net/s3_pub/istreet-assets/CaEFDlS2Vzu9Q4cFIHDvEg/ezgif.com-resize.gif)
+In the project directory, you can run:
 
-The application has the following functionalities:
+### `npm start`
 
-*   The app has three components:
-    *   The Shift component, which allows the user to enter the number of places to shift each character.
-    *   The Plaintext component, which allows the user to enter plain text.
-    *   The Ciphertext component, which allows the user to enter encrypted text.
-*   The shift component initially shows the text 'Enter shift amount'.
-*   A string is encrypted when the user does the following:
-    *   Selects the number of units to shift from the dropdown.
-    *   Enters the text to encrypt into the _Plaintext_ textbox.
-*   A string is decrypted when the user does the following:
-    *   Selects the number of units to shift from the dropdown.
-    *   Enters the text to decrypt into the _Ciphertext_ textbox.
-*   The following list of actions should be supported by the app:
-    *   Enter the text to encrypt into the _Plaintext_ textbox, which encrypts and renders correctly in the _Ciphertext_ textbox
-    *   Delete text from either textbox
-    *   Enter the text to decrypt into the _Ciphertext_ textbox, which decrypts and renders correctly in the _Plaintext_ textbox
-*   The cipher is case-sensitive.
-*   During conversion, you may ignore numbers and special characters with the exception of spaces.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The following data-testid attributes are required in the component for the tests to pass:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-*   The select field to choose the shift should have the data-testid attribute 'select'.
-*   The _Plaintext_ textbox should the data-testid attribute 'plain-text'.
-*   The _Ciphertext_ textbox should have the data-testid attribute 'cipher-text'.
+### `npm test`
 
-Please note that the component has the above data-testid attributes for test cases and certain classes and ids for rendering purposes. It is advised not to change them.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Note: The functions for encrypting and decrypting the data are provided in the Ciphertext and Plaintext components respectively. Please use these functions to encrypt/decrypt the text.
+### `npm run build`
 
-## Environment 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- React Version: 16.13.1
-- Node Version: 14(LTS)
-- Default Port: 8000
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Project Specifications 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-**Read-Only Files**
-- `src/App.test.js`
+### `npm run eject`
 
-**Commands**
-- run: 
-```bash
-npm start
-```
-- install: 
-```bash
-npm install
-```
-- test: 
-```bash
-npm test
-```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
